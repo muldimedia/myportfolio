@@ -52,7 +52,7 @@ body{
 ul.nav-links{
     margin: 0;
     justify-content: center;
-    display: flex;
+    display: inside;
     list-style: none;
 }
 
@@ -154,6 +154,9 @@ button:hover{
     }
     .main p{
         font-size: 15px;
+    }
+    button{
+        font-size: 13px;
     }
     .image-wrapper img{
         max-width: 400px;
