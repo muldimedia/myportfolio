@@ -162,7 +162,9 @@ button:hover{
     font-size: 22px;
   }
   li.nav-link {
-    font-size: 13px;
+    margin: auto;
+    padding: 1%;
+    font-size: 20px;
   }
   ul.nav-links {
     flex-direction: column;
