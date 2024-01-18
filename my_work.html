@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>My Work</title>
     <script src="script.js" defer></script>
+    <title>My Work</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">Blizgo</div>
 
-        <!-- Burger icon and mobile menu -->
         <div class="burger-icon" id="burger-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
           <li class="nav-link"><a href="index.html">Home</a></li>
@@ -24,7 +23,6 @@
           </li>
         </ul>
 
-        <!-- Mobile menu -->
         <ul class="nav-links-mobile" id="nav-links-mobile">
           <li class="nav-link"><a href="index.html">Home</a></li>
           <li class="nav-link"><a href="my_work.html">My Work</a></li>
@@ -41,11 +39,20 @@
       <div class="glass-container">
         <div class="main">
           <h2>Reviews about me and&nbsp;my&nbsp;team.</h2>
-          <p>This should be a carousel with the reviews. <br /></p>
+          <p>
+            In my role as a Lifeguard-pool attendant, I contribute to crafting a
+            delightful pool experience by prioritizing safety and maintaining a
+            constant and welcoming smile. I embody our team's dedication by
+            assisting guests in securing their preferred spots around the pool.
+            We emphasize the importance of patience, providing consistent
+            updates to alleviate concerns about the "morning sunbed stampede."
+            Once assigned, the sunbeds are exclusively reserved for guests
+            throughout their stay, and our attentive team ensures a daily
+            replenishment of fresh pool towels.<br />
+          </p>
         </div>
 
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
             <div class="numbertext">1 / 30</div>
             <img
@@ -385,6 +392,38 @@
         </div>
       </div>
     </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
     <footer>Copyright Stuff</footer>
   </body>
 </html>
