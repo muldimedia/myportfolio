@@ -131,7 +131,7 @@ ul {
 }
 
 .profile {
-  max-height: 8rem;
+  max-height: 150px;
   border-radius: 50%;
 }
 
@@ -149,7 +149,7 @@ ul {
 .burger-icon {
   display: none;
   position: fixed;
-  top: 0;
+  margin: 1rem;
   right: 1rem;
   font-size: 2rem;
   font-weight: bold;
@@ -162,11 +162,9 @@ ul {
   text-align: center;
   list-style: none;
   gap: 1rem;
-  background: rgba(0, 0, 0, 0.56);
   border-radius: 16px;
-  padding: inherit;
-  padding: 2% 0 2% 0;
-  margin: auto;
+  padding: 2% 0;
+  width: 100%;
 }
 
 #nav-links-mobile a {
