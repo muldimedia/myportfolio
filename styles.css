@@ -48,11 +48,29 @@ body {
   -webkit-backdrop-filter: blur(11.6px);
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .logo {
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
+  display: absolute;
+  align-items: center;
+  font-size: 2rem;
   color: black;
+}
+
+#work-in-progress {
+  position: relative;
+  left: 1rem;
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.navbar {
+  display: flex;
+  margin: auto;
 }
 
 ul.nav-links {
@@ -63,7 +81,7 @@ ul.nav-links {
   list-style: none;
   padding: 5%;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 ul.nav-links a {
@@ -78,12 +96,12 @@ ul.nav-links a {
 }
 
 .main h2 {
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 .main p {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
 
 .date {
@@ -107,7 +125,6 @@ ul {
 }
 
 .profile {
-  max-width: 300px;
   max-height: 350px;
   border-radius: 16px;
 }
@@ -124,10 +141,13 @@ ul {
 }
 
 .burger-icon {
-  font-size: 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
-  display: none;
 }
 
 #nav-links-mobile {
@@ -171,24 +191,26 @@ ul {
   }
 }
 
+/* about the slidwshow carousel*/
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
 }
 
+/*carousel previous and next pointers/buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 40px;
-  height: 40x;
-  line-height: 40px;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5rem;
   transition: 0.6s ease;
   background-color: rgba(73, 73, 73, 0.5);
   border: none;
@@ -196,6 +218,7 @@ ul {
   user-select: none;
 }
 
+/*carousel previous and next pointers/buttons */
 .prev {
   left: 0;
   margin-top: -10px;
@@ -206,29 +229,32 @@ ul {
   margin-top: -10px;
 }
 
+/*numbers on top of carousel showcasing the slide you are at*/
 .numbertext {
   color: rgb(255, 255, 255);
   font-size: 15px;
   font-weight: bolder;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75px;
 }
 
+/* the dots underneeth the carousel*/
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 0.8rem;
+  width: 0.8rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
+/* the dots underneeth the carousel*/
 .active,
 .dot:hover {
   background-color: #717171;
 }
 
+/* the dots underneeth the carousel*/
 .fade {
   animation-name: fade;
   animation-duration: 1.75s;
