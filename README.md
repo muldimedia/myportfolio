@@ -1,2 +1,2 @@
-# myportfolio
- This is a try to do a mini portfolio/ website
+# My Portfolio
+An attempt at creating a mini portfolio/website.
