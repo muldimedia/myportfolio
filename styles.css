@@ -117,7 +117,8 @@ ul li {
   line-height: 1.5em;
 }
 
-.date .time-period {
+.date,
+.time-period {
   font-size: 1.25rem;
   opacity: 0.7;
 }
